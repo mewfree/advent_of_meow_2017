@@ -12,6 +12,6 @@ defmodule AOM.Day01 do
     IO.puts "Part 1:"
     IO.puts solve_part(input, 1)
     IO.puts "Part 2:"
-    IO.puts solve_part(input, length(input |> String.graphemes) |> div(2))
+    IO.puts solve_part(input, input |> String.graphemes |> length |> div(2))
   end
 end
