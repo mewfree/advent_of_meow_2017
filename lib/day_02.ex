@@ -7,10 +7,7 @@ defmodule AOM.Day02 do
     |> Enum.map(
       fn(line) -> line
       |> String.split("\t")
-      |> Enum.map(
-        fn(integer) -> integer
-        |> String.to_integer
-        end)
+      |> Enum.map(&String.to_integer/1)
       end)
   end
 
